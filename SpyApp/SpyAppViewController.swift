@@ -7,19 +7,28 @@ class SpyAppViewController: UIViewController {
     @IBOutlet weak var output: UILabel!
 
     let factory = CipherFactory()
-    var cipher: Cipher!
+    var cipher: Cipher?
 
     @IBAction func encodeButtonPressed(_ sender: UIButton) {
         let plaintext = input.text!
         let secret = self.secret.text!
-        output.text = cipher.encode(plaintext, secret: secret)
+
+        if let cipher = self.cipher {
+            output.text = cipher.encode(plaintext, secret: secret)
+        } else {
+            output.text = "No cipher selected"
+        }
     }
 
-    // We will talk about this method during lecture
     @IBAction func cipherButtonPressed(_ sender: UIButton) {
-        let key = sender.titleLabel!.text!
-        cipher = factory.cipher(for: key)
+        guard
+            let buttonLable = sender.titleLabel,
+            let buttonText = buttonLable.text
+        else {
+            output.text = "No button or no button text"
+            return
+        }
+        cipher = factory.cipher(for: buttonText)
     }
-
 }
 

@@ -14,7 +14,7 @@
 		970E4DDF2138EC8700BA3EE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970E4DDD2138EC8700BA3EE9 /* LaunchScreen.storyboard */; };
 		970E4DEA2138EC8700BA3EE9 /* SpyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E4DE92138EC8700BA3EE9 /* SpyAppTests.swift */; };
 		970E4DF52138FC0B00BA3EE9 /* CeaserCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E4DF42138FC0B00BA3EE9 /* CeaserCipher.swift */; };
-		970E4DF721392D4800BA3EE9 /* CipherFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E4DF621392D4800BA3EE9 /* CipherFactory.swift */; };
+		97CA94A82142334600902499 /* CipherFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CA94A72142334600902499 /* CipherFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 		970E4DE92138EC8700BA3EE9 /* SpyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyAppTests.swift; sourceTree = "<group>"; };
 		970E4DEB2138EC8700BA3EE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		970E4DF42138FC0B00BA3EE9 /* CeaserCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeaserCipher.swift; sourceTree = "<group>"; };
-		970E4DF621392D4800BA3EE9 /* CipherFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CipherFactory.swift; sourceTree = "<group>"; };
+		97CA94A72142334600902499 /* CipherFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CipherFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 				970E4DD42138EC8600BA3EE9 /* AppDelegate.swift */,
 				970E4DD62138EC8600BA3EE9 /* SpyAppViewController.swift */,
 				970E4DF42138FC0B00BA3EE9 /* CeaserCipher.swift */,
-				970E4DF621392D4800BA3EE9 /* CipherFactory.swift */,
+				97CA94A72142334600902499 /* CipherFactory.swift */,
 				970E4DD82138EC8600BA3EE9 /* Main.storyboard */,
 				970E4DDB2138EC8700BA3EE9 /* Assets.xcassets */,
 				970E4DDD2138EC8700BA3EE9 /* LaunchScreen.storyboard */,
@@ -204,7 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				970E4DF52138FC0B00BA3EE9 /* CeaserCipher.swift in Sources */,
-				970E4DF721392D4800BA3EE9 /* CipherFactory.swift in Sources */,
+				97CA94A82142334600902499 /* CipherFactory.swift in Sources */,
 				970E4DD72138EC8600BA3EE9 /* SpyAppViewController.swift in Sources */,
 				970E4DD52138EC8600BA3EE9 /* AppDelegate.swift in Sources */,
 			);
