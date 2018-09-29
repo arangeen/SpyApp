@@ -4,7 +4,7 @@ struct CipherFactory {
 
     private var ciphers: [String: Cipher] = [
         "Ceasar": CeaserCipher(),
-        "someOtherCipher": CeaserCipher()
+        "Button": CeaserCipher()
     ]
 
     func cipher(for key: String) -> Cipher {

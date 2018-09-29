@@ -14,6 +14,7 @@
 		970E4DDF2138EC8700BA3EE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970E4DDD2138EC8700BA3EE9 /* LaunchScreen.storyboard */; };
 		970E4DEA2138EC8700BA3EE9 /* SpyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E4DE92138EC8700BA3EE9 /* SpyAppTests.swift */; };
 		970E4DF52138FC0B00BA3EE9 /* CeaserCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E4DF42138FC0B00BA3EE9 /* CeaserCipher.swift */; };
+		978590D1214B5C350052D920 /* CeaserCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978590D0214B5C350052D920 /* CeaserCipherTests.swift */; };
 		97CA94A82142334600902499 /* CipherFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CA94A72142334600902499 /* CipherFactory.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		970E4DE92138EC8700BA3EE9 /* SpyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyAppTests.swift; sourceTree = "<group>"; };
 		970E4DEB2138EC8700BA3EE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		970E4DF42138FC0B00BA3EE9 /* CeaserCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeaserCipher.swift; sourceTree = "<group>"; };
+		978590D0214B5C350052D920 /* CeaserCipherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeaserCipherTests.swift; sourceTree = "<group>"; };
 		97CA94A72142334600902499 /* CipherFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CipherFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				970E4DE92138EC8700BA3EE9 /* SpyAppTests.swift */,
+				978590D0214B5C350052D920 /* CeaserCipherTests.swift */,
 				970E4DEB2138EC8700BA3EE9 /* Info.plist */,
 			);
 			path = SpyAppTests;
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				970E4DEA2138EC8700BA3EE9 /* SpyAppTests.swift in Sources */,
+				978590D1214B5C350052D920 /* CeaserCipherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

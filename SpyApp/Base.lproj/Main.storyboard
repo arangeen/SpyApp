@@ -59,6 +59,13 @@
                                     <action selector="cipherButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZID-fk-SIM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsX-8Z-NWz">
+                                <rect key="frame" x="73" y="96" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="cipherButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ju8-Vb-tuZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -66,6 +73,7 @@
                             <constraint firstItem="cW2-gE-Std" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="JwL-SB-ITd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="48c-5E-e8N" secondAttribute="trailing" constant="16" id="Qwe-M7-v3S"/>
                             <constraint firstItem="4B7-dH-Qje" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="URM-Hs-FUu"/>
+                            <constraint firstItem="wsX-8Z-NWz" firstAttribute="top" secondItem="4B7-dH-Qje" secondAttribute="bottom" constant="8" id="Wpa-5e-sQr"/>
                             <constraint firstItem="IU8-P1-mBo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ckC-pr-McZ"/>
                             <constraint firstItem="kq1-Ko-TkT" firstAttribute="top" secondItem="4B7-dH-Qje" secondAttribute="bottom" constant="55" id="doA-89-Scr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IU8-P1-mBo" secondAttribute="trailing" constant="16" id="e8V-rs-Bwg"/>
@@ -74,6 +82,7 @@
                             <constraint firstItem="IU8-P1-mBo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hXU-kq-KDv"/>
                             <constraint firstItem="48c-5E-e8N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jfx-dg-eDj"/>
                             <constraint firstItem="cW2-gE-Std" firstAttribute="top" secondItem="4B7-dH-Qje" secondAttribute="bottom" constant="8" id="mMP-8d-Zck"/>
+                            <constraint firstItem="wsX-8Z-NWz" firstAttribute="leading" secondItem="cW2-gE-Std" secondAttribute="trailing" constant="8" id="qB7-L5-55x"/>
                             <constraint firstItem="48c-5E-e8N" firstAttribute="top" secondItem="kq1-Ko-TkT" secondAttribute="bottom" constant="8" id="xNA-TX-c3B"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
