@@ -5,6 +5,9 @@ class SpyAppViewController: UIViewController {
     @IBOutlet weak var input: UITextField!
     @IBOutlet weak var secret: UITextField!
     @IBOutlet weak var output: UILabel!
+    //meeee connecting labeltwo
+    @IBOutlet weak var outputTwo: UILabel!
+    
 
     let factory = CipherFactory()
     var cipher: Cipher?
@@ -21,6 +24,15 @@ class SpyAppViewController: UIViewController {
         if let text = secret.text {
             return text
         } else {
+            return ""
+        }
+    }
+    
+    // meeee for output text to decrypt
+    var outputTextToDecode: String {
+        if let text = output.text{
+            return text
+        }else {
             return ""
         }
     }
@@ -47,5 +59,22 @@ class SpyAppViewController: UIViewController {
         }
         cipher = factory.cipher(for: buttonText)
     }
+    
+    ///meeeee connected decode button
+    @IBAction func decodeButtonPressed(_ sender: UIButton) {
+        guard let cipher = self.cipher else {
+            outputTwo.text = "No cipher selected"
+            return
+        }
+        if let decoded = cipher.decode(outputTextToDecode, secret: secretText){
+            outputTwo.text = decoded
+        }else {
+            outputTwo.text = "Error decoding"
+        }
+        
+    }
+    
+    
+    
 }
 
