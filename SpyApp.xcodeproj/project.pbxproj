@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F6A116E21657E8300A92C32 /*  AlphanumericCesarCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6A116D21657E8300A92C32 /*  AlphanumericCesarCipher.swift */; };
 		970E4DD52138EC8600BA3EE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E4DD42138EC8600BA3EE9 /* AppDelegate.swift */; };
 		970E4DD72138EC8600BA3EE9 /* SpyAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E4DD62138EC8600BA3EE9 /* SpyAppViewController.swift */; };
 		970E4DDA2138EC8600BA3EE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970E4DD82138EC8600BA3EE9 /* Main.storyboard */; };
@@ -30,7 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5F6A116D21657E8300A92C32 /*  AlphanumericCesarCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " AlphanumericCesarCipher.swift"; sourceTree = "<group>"; };
 		970E4DD12138EC8600BA3EE9 /* SpyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		970E4DD42138EC8600BA3EE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		970E4DD62138EC8600BA3EE9 /* SpyAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyAppViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +86,6 @@
 				970E4DD42138EC8600BA3EE9 /* AppDelegate.swift */,
 				970E4DD62138EC8600BA3EE9 /* SpyAppViewController.swift */,
 				970E4DF42138FC0B00BA3EE9 /* CeaserCipher.swift */,
-				5F6A116D21657E8300A92C32 /*  AlphanumericCesarCipher.swift */,
 				97CA94A72142334600902499 /* CipherFactory.swift */,
 				970E4DD82138EC8600BA3EE9 /* Main.storyboard */,
 				970E4DDB2138EC8700BA3EE9 /* Assets.xcassets */,
@@ -213,7 +210,6 @@
 				97CA94A82142334600902499 /* CipherFactory.swift in Sources */,
 				970E4DD72138EC8600BA3EE9 /* SpyAppViewController.swift in Sources */,
 				970E4DD52138EC8600BA3EE9 /* AppDelegate.swift in Sources */,
-				5F6A116E21657E8300A92C32 /*  AlphanumericCesarCipher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

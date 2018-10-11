@@ -23,6 +23,15 @@ class CeaserCipherTests: XCTestCase {
 
         XCTAssertNil(result)
     }
+    
+    func test_oneUpperCharacterStringToLowerCharacterString() {
+        let plaintext = "a"
+        
+        let result = cipher.alphanumeric("A")
+        
+        XCTAssertEqual(plaintext, result)
+        
+    }
 
 
 }

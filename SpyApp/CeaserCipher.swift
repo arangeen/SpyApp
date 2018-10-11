@@ -11,12 +11,18 @@ import Foundation
 protocol Cipher {
     func encode(_ plaintext: String, secret: String) -> String?
     
-    
     func decode(_ outputTextToDecode: String, secret: String) -> String?
+    
+    
+    
+     func alphanumeric(_ AlphanumericText: String) -> String?
+    
    
 }
 
 struct CeaserCipher: Cipher {
+
+    
 
     func encode(_ plaintext: String, secret: String) -> String? {
         guard let shiftBy = UInt32(secret) else {
@@ -47,5 +53,13 @@ struct CeaserCipher: Cipher {
              decoded = decoded + shiftedCharacter
         }
         return decoded
+    }
+    
+    
+    func alphanumeric(_ AlphanumericText: String) -> String? {
+        
+        let upperCaseToLowerCase = AlphanumericText.lowercased()
+        return upperCaseToLowerCase
+        
     }
 }

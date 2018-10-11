@@ -66,16 +66,6 @@
                                     <action selector="decodeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bfs-EA-kHj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelTwo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9W-cH-8yD">
-                                <rect key="frame" x="16" y="266" width="343" height="35"/>
-                                <color key="backgroundColor" red="0.97145146131515503" green="0.95302313566207886" blue="0.91792076826095581" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="SzV-W4-dxi"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZWT-Ee-xAj">
                                 <rect key="frame" x="16" y="309" width="180" height="30"/>
                                 <nil key="textColor"/>
@@ -85,11 +75,14 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m44-6y-wGf">
                                 <rect key="frame" x="231" y="309" width="102" height="30"/>
                                 <color key="backgroundColor" red="0.96806319303164801" green="0.99705451726913452" blue="0.58631489249310598" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="ToLowerCase"/>
+                                <connections>
+                                    <action selector="AlphanumericButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Za2-2l-RZs"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIt-wQ-pbz">
-                                <rect key="frame" x="16" y="347" width="343" height="20.5"/>
-                                <color key="backgroundColor" red="0.95706739172416644" green="0.88352810125822656" blue="0.66955992126276931" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="16" y="347" width="343" height="21"/>
+                                <color key="backgroundColor" red="0.95706739172416644" green="0.88352810125822656" blue="0.66955992126276931" alpha="0.33082086267605632" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -107,6 +100,16 @@
                                     <action selector="encodeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oxW-wn-ML6"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelTwo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9W-cH-8yD">
+                                <rect key="frame" x="16" y="266" width="343" height="35"/>
+                                <color key="backgroundColor" red="0.97145146131515503" green="0.95302313566207886" blue="0.91792076826095581" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="SzV-W4-dxi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -143,6 +146,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="AlphanumericInput" destination="ZWT-Ee-xAj" id="fmE-1D-YCz"/>
+                        <outlet property="AlphanumericOutput" destination="AIt-wQ-pbz" id="dNb-Ib-NZB"/>
                         <outlet property="input" destination="IU8-P1-mBo" id="eBd-Pq-haQ"/>
                         <outlet property="output" destination="48c-5E-e8N" id="KEj-fU-eOB"/>
                         <outlet property="outputTwo" destination="w9W-cH-8yD" id="DE1-7F-bda"/>

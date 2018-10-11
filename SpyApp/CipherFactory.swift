@@ -6,6 +6,7 @@ struct CipherFactory {
         "Ceasar": CeaserCipher(),
         "Button": CeaserCipher()
     ]
+    
 
     func cipher(for key: String) -> Cipher {
         return ciphers[key]!
