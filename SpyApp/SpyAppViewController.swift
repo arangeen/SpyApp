@@ -28,7 +28,7 @@ class SpyAppViewController: UIViewController {
         }
     }
     
-    // meeee for output text to decrypt
+    // output text to decrypt
     var outputTextToDecode: String {
         if let text = output.text{
             return text
@@ -60,7 +60,7 @@ class SpyAppViewController: UIViewController {
         cipher = factory.cipher(for: buttonText)
     }
     
-    ///meeeee connected decode button
+    // connected decode button
     @IBAction func decodeButtonPressed(_ sender: UIButton) {
         guard let cipher = self.cipher else {
             outputTwo.text = "No cipher selected"

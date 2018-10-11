@@ -11,8 +11,8 @@ import Foundation
 protocol Cipher {
     func encode(_ plaintext: String, secret: String) -> String?
     
-    //meee
-    func decode(_ plaintext: String, secret: String) -> String?
+    
+    func decode(_ outputTextToDecode: String, secret: String) -> String?
    
 }
 
@@ -33,14 +33,14 @@ struct CeaserCipher: Cipher {
         return encoded
     }
     
-    //meee
-    func decode(_ plaintext: String, secret: String) -> String? {
+    //
+    func decode(_ outputTextToDecode: String, secret: String) -> String? {
         guard let shiftBack = UInt32(secret) else{
             return nil
         }
         var decoded = ""
         
-        for character in plaintext{
+        for character in outputTextToDecode{
              let unicode = character.unicodeScalars.first!.value
              let shiftedUnicode = unicode - shiftBack
              let shiftedCharacter = String(UnicodeScalar(UInt8(shiftedUnicode)))
